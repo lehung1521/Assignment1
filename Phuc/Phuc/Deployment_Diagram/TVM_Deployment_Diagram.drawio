@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-31T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="deployment" name="TVM Deployment">
+    <mxGraphModel dx="1550" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="header" value="&lt;b&gt;TVM DEPLOYMENT DIAGRAM&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Proposed target architecture – Smart Ticketing System&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#123253;strokeColor=#123253;fontColor=#17243c;fontSize=22;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="25" width="1360" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="kiosk" value="&lt;b&gt;TVM KIOSK – Passenger site&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf5ff;strokeColor=#84b2e4;fontColor=#17243c;fontSize=18;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;verticalAlign=top;spacingTop=14;" vertex="1" parent="1">
+          <mxGeometry x="60" y="125" width="445" height="650" as="geometry"/>
+        </mxCell>
+        <mxCell id="backend" value="&lt;b&gt;TRUSTED BACKEND – Private network&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecf9f5;strokeColor=#72b7a6;fontColor=#17243c;fontSize=18;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;verticalAlign=top;spacingTop=14;" vertex="1" parent="1">
+          <mxGeometry x="555" y="125" width="520" height="650" as="geometry"/>
+        </mxCell>
+        <mxCell id="external" value="&lt;b&gt;EXTERNAL PAYMENT PROVIDER&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff6e9;strokeColor=#e6b174;fontColor=#17243c;fontSize=18;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;verticalAlign=top;spacingTop=14;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="125" width="390" height="650" as="geometry"/>
+        </mxCell>
+        <mxCell id="touch" value="&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Touchscreen&lt;/b&gt;&lt;br&gt;Passenger UI + QR display" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93a7bc;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="172" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="reader" value="&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Card Reader&lt;/b&gt;&lt;br&gt;Card insert / tap" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93a7bc;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="300" y="215" width="165" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="client" value="&amp;lt;&amp;lt;executionEnvironment&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TVM Kiosk Client&lt;/b&gt;&lt;br&gt;C# UI / TVMController" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d7e9ff;strokeColor=#548bc6;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="145" y="417" width="280" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="printer" value="&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Ticket Printer&lt;/b&gt;&lt;br&gt;Barcode paper ticket" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93a7bc;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="145" y="628" width="280" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="app" value="&amp;lt;&amp;lt;server&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Application Server&lt;/b&gt;&lt;br&gt;Ticket, Fare, Payment services&lt;br&gt;Verify / reconcile transactions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5f4ea;strokeColor=#58a593;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="625" y="265" width="378" height="143" as="geometry"/>
+        </mxCell>
+        <mxCell id="db" value="&amp;lt;&amp;lt;database server&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Microsoft SQL Server&lt;/b&gt;&lt;br&gt;Routes / Tickets / Transactions&lt;br&gt;Payment attempts and statuses" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93a7bc;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="625" y="554" width="378" height="133" as="geometry"/>
+        </mxCell>
+        <mxCell id="gw" value="&amp;lt;&amp;lt;external system&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Payment Gateway API&lt;/b&gt;&lt;br&gt;Card / Bank QR / Digital Wallet&lt;br&gt;Payment status and callbacks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#93a7bc;fontColor=#17243c;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="340" width="300" height="157" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="Local UI" style="endArrow=block;html=1;rounded=1;strokeColor=#4a6484;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;jettySize=auto;startArrow=block;" edge="1" parent="1" source="touch" target="client">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="Device SDK / USB" style="endArrow=block;html=1;rounded=1;strokeColor=#4a6484;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;jettySize=auto;startArrow=block;" edge="1" parent="1" source="reader" target="client">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="USB / printer driver" style="endArrow=block;html=1;rounded=1;strokeColor=#4a6484;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;jettySize=auto;" edge="1" parent="1" source="client" target="printer">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="HTTPS / TLS&lt;br&gt;Requests + status query" style="endArrow=block;html=1;rounded=1;strokeColor=#4a6484;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;jettySize=auto;startArrow=block;" edge="1" parent="1" source="client" target="app">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="SQL/TDS over TLS&lt;br&gt;TCP configured port" style="endArrow=block;html=1;rounded=1;strokeColor=#4a6484;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;jettySize=auto;startArrow=block;" edge="1" parent="1" source="app" target="db">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="HTTPS / TLS&lt;br&gt;Payment request + verification" style="endArrow=block;html=1;rounded=1;strokeColor=#4a6484;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;jettySize=auto;startArrow=block;" edge="1" parent="1" source="app" target="gw">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="&lt;b&gt;Important:&lt;/b&gt; Gateway callbacks are verified and deduplicated; uncertain payments are reconciled before issuing tickets.&lt;br&gt;&lt;b&gt;Prototype:&lt;/b&gt; C# + MSSQL may run locally; the server split above is the proposed full TVM deployment." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f6f8fb;strokeColor=#dbe2ea;fontColor=#17243c;fontSize=12;fontFamily=Arial;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="170" y="808" width="1250" height="58" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
