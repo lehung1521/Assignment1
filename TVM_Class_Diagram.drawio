@@ -1,0 +1,495 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="tvm-full-class-diagram" name="FULL UML Class Diagram - All 26 Classes">
+    <mxGraphModel dx="5421" dy="2774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="9870" pageHeight="4120" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="domain_panel" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#F2F7FC;strokeColor=#B7C9DA;strokeWidth=1.2;opacity=55;" value="" vertex="1">
+          <mxGeometry height="3745" width="4320" x="75" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="app_panel" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#F8F6FC;strokeColor=#C9C2DD;strokeWidth=1.2;opacity=55;" value="" vertex="1">
+          <mxGeometry height="3745" width="5220" x="4550" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="D_route_origin" edge="1" parent="1" source="D_Route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.29;exitDx=0;exitDy=0;entryX=1;entryY=0.32;entryDx=0;entryDy=0;" target="D_Station" value="origin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_route_origin_m0" connectable="0" parent="D_route_origin" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_route_origin_m1" connectable="0" parent="D_route_origin" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_route_destination" edge="1" parent="1" source="D_Route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.73;exitDx=0;exitDy=0;entryX=1;entryY=0.77;entryDx=0;entryDy=0;" target="D_Station" value="destination">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_route_destination_m0" connectable="0" parent="D_route_destination" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_route_destination_m1" connectable="0" parent="D_route_destination" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_fare_route" edge="1" parent="1" source="D_FareRule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.47;exitDx=0;exitDy=0;entryX=1;entryY=0.47;entryDx=0;entryDy=0;" target="D_Route" value="fares for">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_fare_route_m0" connectable="0" parent="D_fare_route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_fare_route_m1" connectable="0" parent="D_fare_route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_tvm_origin" edge="1" parent="1" source="D_Tvm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.55;entryY=0;entryDx=0;entryDy=0;" target="D_Station" value="fixed origin">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3760" y="396" />
+              <mxPoint x="595" y="396" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_tvm_origin_m0" connectable="0" parent="D_tvm_origin" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_tvm_origin_m1" connectable="0" parent="D_tvm_origin" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_tvm" edge="1" parent="1" source="D_PurchaseSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.9;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="D_Tvm" value="sold at">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3145" y="1045" />
+              <mxPoint x="3760" y="1045" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_tvm_m0" connectable="0" parent="D_session_tvm" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_tvm_m1" connectable="0" parent="D_session_tvm" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_route" edge="1" parent="1" source="D_PurchaseSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.28;exitY=0;exitDx=0;exitDy=0;entryX=0.72;entryY=1;entryDx=0;entryDy=0;" target="D_Route" value="route selected">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2600" y="995" />
+              <mxPoint x="1785" y="995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_route_m0" connectable="0" parent="D_session_route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_route_m1" connectable="0" parent="D_session_route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_fare" edge="1" parent="1" source="D_PurchaseSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.64;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="D_FareRule" value="fare snapshot">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2920" y="1070" />
+              <mxPoint x="2870" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_fare_m0" connectable="0" parent="D_session_fare" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_session_fare_m1" connectable="0" parent="D_session_fare" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_tx_session" edge="1" parent="1" source="D_PurchaseTransaction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=1;exitY=0.32;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="D_PurchaseSession" value="payment(s)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_tx_session_m0" connectable="0" parent="D_tx_session" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_tx_session_m1" connectable="0" parent="D_tx_session" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_attempt_tx" edge="1" parent="1" source="D_PaymentAttempt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=1;exitY=0.45;exitDx=0;exitDy=0;entryX=0;entryY=0.45;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="gateway attempt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_attempt_tx_m0" connectable="0" parent="D_attempt_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_attempt_tx_m1" connectable="0" parent="D_attempt_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_ticket_session" edge="1" parent="1" source="D_Ticket" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.38;exitDx=0;exitDy=0;entryX=1;entryY=0.47;entryDx=0;entryDy=0;" target="D_PurchaseSession" value="one ticket">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_ticket_session_m0" connectable="0" parent="D_ticket_session" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_ticket_session_m1" connectable="0" parent="D_ticket_session" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_ticket_tx" edge="1" parent="1" source="D_Ticket" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.36;exitY=1;exitDx=0;exitDy=0;entryX=0.83;entryY=1;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="paid by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3734" y="2030" />
+              <mxPoint x="1987" y="2030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_ticket_tx_m0" connectable="0" parent="D_ticket_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_ticket_tx_m1" connectable="0" parent="D_ticket_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_history_tx" edge="1" parent="1" source="D_TransactionStatusHistory" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.7;exitY=0;exitDx=0;exitDy=0;entryX=0.2;entryY=1;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="status history">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="785" y="2180" />
+              <mxPoint x="1382" y="2180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_history_tx_m0" connectable="0" parent="D_history_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_history_tx_m1" connectable="0" parent="D_history_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_callback_tx" edge="1" parent="1" source="D_GatewayCallbackLog" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.56;exitY=0;exitDx=0;exitDy=0;entryX=0.64;entryY=1;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="result events">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1720" y="2110" />
+              <mxPoint x="1805" y="2110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_callback_tx_m0" connectable="0" parent="D_callback_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_callback_tx_m1" connectable="0" parent="D_callback_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_recon_tx" edge="1" parent="1" source="D_ReconciliationTask" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.45;exitY=0;exitDx=0;exitDy=0;entryX=0.81;entryY=1;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="reconciles">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2733" y="2140" />
+              <mxPoint x="1968" y="2140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_recon_tx_m0" connectable="0" parent="D_recon_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_recon_tx_m1" connectable="0" parent="D_recon_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_alert_tvm" edge="1" parent="1" source="D_MaintenanceAlert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=1;exitY=0.33;exitDx=0;exitDy=0;entryX=1;entryY=0.67;entryDx=0;entryDy=0;" target="D_Tvm" value="machine alert">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4315" y="2525" />
+              <mxPoint x="4450" y="2525" />
+              <mxPoint x="4450" y="784" />
+              <mxPoint x="4220" y="784" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_alert_tvm_m0" connectable="0" parent="D_alert_tvm" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_alert_tvm_m1" connectable="0" parent="D_alert_tvm" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_alert_tx" edge="1" parent="1" source="D_MaintenanceAlert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=0;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.22;exitY=0;exitDx=0;exitDy=0;entryX=0.91;entryY=1;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="related payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3590" y="2210" />
+              <mxPoint x="2064" y="2210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_alert_tx_m0" connectable="0" parent="D_alert_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="-0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_alert_tx_m1" connectable="0" parent="D_alert_tx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Arial;fontStyle=1;fontColor=#1C456B;labelBackgroundColor=#FFFFFF;" value="0..1" vertex="1">
+          <mxGeometry height="22" relative="1" width="55" x="0.83" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_ui_uses_ctrl" edge="1" parent="1" source="A_TVMScreen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0;exitY=0.45;exitDx=0;exitDy=0;entryX=1;entryY=0.45;entryDx=0;entryDy=0;" target="A_PurchaseController" value="user commands">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_controller_repo" edge="1" parent="1" source="A_PurchaseController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0;exitY=0.36;exitDx=0;exitDy=0;entryX=1;entryY=0.36;entryDx=0;entryDy=0;" target="A_TicketingRepository" value="query / persist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_controller_pricing" edge="1" parent="1" source="A_PurchaseController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0.12;exitY=1;exitDx=0;exitDy=0;entryX=0.85;entryY=0;entryDx=0;entryDy=0;" target="A_PricingEngine" value="calculate fare">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="6111" y="1340" />
+              <mxPoint x="5370" y="1340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_controller_payment" edge="1" parent="1" source="A_PurchaseController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0.52;exitY=1;exitDx=0;exitDy=0;entryX=0.54;entryY=0;entryDx=0;entryDy=0;" target="A_PaymentProcessor" value="initiate / confirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_controller_printer" edge="1" parent="1" source="A_PurchaseController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0.93;exitY=1;exitDx=0;exitDy=0;entryX=0.28;entryY=0;entryDx=0;entryDy=0;" target="A_PrinterService" value="issue ticket">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="7026" y="1370" />
+              <mxPoint x="7300" y="1370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_printer_barcode" edge="1" parent="1" source="A_PrinterService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=1;exitY=0.36;exitDx=0;exitDy=0;entryX=0;entryY=0.36;entryDx=0;entryDy=0;" target="A_BarcodeGenerator" value="encode barcode">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_processor_adapter" edge="1" parent="1" source="A_PaymentProcessor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.85;entryY=0;entryDx=0;entryDy=0;" target="A_GatewayAdapter" value="gateway calls">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5960" y="2150" />
+              <mxPoint x="5485" y="2150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_processor_repo" edge="1" parent="1" source="A_PaymentProcessor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0;exitY=0.35;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="A_TicketingRepository" value="transaction state">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5600" y="1650" />
+              <mxPoint x="5600" y="1255" />
+              <mxPoint x="5450" y="1255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_pricing_repo" edge="1" parent="1" source="A_PricingEngine" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="A_TicketingRepository" value="find active fare">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_adapter_api" edge="1" parent="1" source="A_GatewayAdapter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=1;exitY=0.34;exitDx=0;exitDy=0;entryX=0;entryY=0.34;entryDx=0;entryDy=0;" target="A_IPaymentGateway" value="uses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_mock_gateway_implements" edge="1" parent="1" source="A_SimulatedPaymentGateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=block;startFill=0;endFill=0;exitX=0;exitY=0.67;exitDx=0;exitDy=0;entryX=1;entryY=0.67;entryDx=0;entryDy=0;" target="A_IPaymentGateway" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_printer_device" edge="1" parent="1" source="A_PrinterService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=open;startFill=0;endFill=0;exitX=1;exitY=0.68;exitDx=0;exitDy=0;entryX=0.55;entryY=0;entryDx=0;entryDy=0;" target="A_IPrinterDevice" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="8170" y="1895" />
+              <mxPoint x="8895" y="1895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_mock_printer_implements" edge="1" parent="1" source="A_SimulatedPrinter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#51647D;strokeWidth=1.7;fontColor=#24384F;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;dashed=1;dashPattern=6 5;startArrow=none;endArrow=block;startFill=0;endFill=0;exitX=0.48;exitY=0;exitDx=0;exitDy=0;entryX=0.48;entryY=1;entryDx=0;entryDy=0;" target="A_IPrinterDevice" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X_repo_ticket" edge="1" parent="1" source="A_TicketingRepository" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9A7A5A;strokeWidth=1.6;dashed=1;dashPattern=5 5;startArrow=none;endArrow=open;startFill=0;endFill=0;fontColor=#7E654B;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.32;entryDx=0;entryDy=0;" target="D_Ticket" value="maps ticket">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4465" y="1025" />
+              <mxPoint x="4465" y="1365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_repo_transaction" edge="1" parent="1" source="A_TicketingRepository" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9A7A5A;strokeWidth=1.6;dashed=1;dashPattern=5 5;startArrow=none;endArrow=open;startFill=0;endFill=0;fontColor=#7E654B;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.88;exitDx=0;exitDy=0;entryX=0.93;entryY=0;entryDx=0;entryDy=0;" target="D_PurchaseTransaction" value="maps transaction">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4520" y="1135" />
+              <mxPoint x="4520" y="1175" />
+              <mxPoint x="2080" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_repo_session" edge="1" parent="1" source="A_TicketingRepository" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9A7A5A;strokeWidth=1.6;dashed=1;dashPattern=5 5;startArrow=none;endArrow=open;startFill=0;endFill=0;fontColor=#7E654B;fontFamily=Arial;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.96;exitDx=0;exitDy=0;entryX=0.9;entryY=0;entryDx=0;entryDy=0;" target="D_PurchaseSession" value="maps session">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4560" y="1200" />
+              <mxPoint x="3155" y="1200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main_title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontColor=#1C3652;fontSize=37;fontFamily=Arial;" value="&lt;b&gt;SMART TICKETING SYSTEM  |  UML CLASS DIAGRAM&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="8200" x="120" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="main_caption" parent="1" style="text;html=1;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontColor=#536881;fontSize=18;fontFamily=Arial;" value="One-page unified model  ·  14 SQL entities  +  12 team design classes  ·  UML 2.x  ·  UC01–UC12" vertex="1">
+          <mxGeometry height="38" width="9300" x="125" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="domain_heading" parent="1" style="text;html=1;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontColor=#203953;fontSize=24;fontFamily=Arial;" value="&lt;b&gt;DOMAIN MODEL — SQL-BACKED ENTITIES&lt;/b&gt;" vertex="1">
+          <mxGeometry height="44" width="4284" x="93" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="domain_sub" parent="1" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontColor=#486077;fontSize=16;fontFamily=Arial;" value="Entity/attribute names and 16 FK-backed UML associations follow 01_create_schema.sql" vertex="1">
+          <mxGeometry height="36" width="4285" x="93" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="app_heading" parent="1" style="text;html=1;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontColor=#203953;fontSize=24;fontFamily=Arial;" value="&lt;b&gt;APPLICATION DESIGN &amp;amp; INTEGRATION&lt;/b&gt;" vertex="1">
+          <mxGeometry height="44" width="5184" x="4568" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="app_sub" parent="1" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontColor=#486077;fontSize=16;fontFamily=Arial;" value="Controller, UI, services, repository, adapters, and prototype interfaces from the team model" vertex="1">
+          <mxGeometry height="36" width="5185" x="4568" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="domain_catalog" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#365E85;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;CATALOG &amp;amp; MACHINE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="4190" x="130" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="domain_sales" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#365E85;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;PURCHASE / PAYMENT / TICKET&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="4190" x="130" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="domain_audit" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#365E85;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;AUDIT, RECOVERY &amp;amp; MAINTENANCE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="4190" x="130" y="2250" as="geometry" />
+        </mxCell>
+        <mxCell id="domain_rules" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#365E85;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;STANDALONE LOGGING &amp;amp; STATUS RULES&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="4190" x="130" y="3190" as="geometry" />
+        </mxCell>
+        <mxCell id="app_presentation" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#675392;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;PRESENTATION / APPLICATION CONTROL&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="5090" x="4610" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="app_business" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#675392;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;BUSINESS SERVICES&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="5090" x="4610" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="app_integration" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#675392;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;INTEGRATION / DEVICES&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="5090" x="4610" y="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="app_legend" parent="1" style="rounded=1;arcSize=8;html=1;fillColor=#EEF3F8;strokeColor=#D7E1EB;strokeWidth=1;fontColor=#675392;fontSize=17;spacingLeft=14;align=left;verticalAlign=middle;fontFamily=Arial;" value="&lt;b&gt;UML NOTATION &amp;amp; DESIGN CONSTRAINTS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="5090" x="4610" y="3370" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Station" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3669A3;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;Station&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(54, 105, 163);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;StationId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;Code:&amp;nbsp;string&amp;nbsp;{unique}&lt;br&gt;+&amp;nbsp;NameVi:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;NameEn:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;IsActive:&amp;nbsp;bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="316" width="810" x="150" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Route" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3669A3;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;Route&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(54, 105, 163);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;RouteId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;Mode:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;LineCode:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;RouteNameVi:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;RouteNameEn:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;OriginStationId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;DestinationStationId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;IsAvailable:&amp;nbsp;bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="445" width="855" x="1170" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="D_FareRule" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3669A3;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;FareRule&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(54, 105, 163);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;FareRuleId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;RouteId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;PriceVnd:&amp;nbsp;decimal&lt;br&gt;+&amp;nbsp;EffectiveFrom:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;EffectiveTo:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;IsActive:&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;UpdatedBy:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;UpdatedAt:&amp;nbsp;DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="435" width="850" x="2230" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Tvm" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3669A3;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;Tvm&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(54, 105, 163);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;TvmId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;Code:&amp;nbsp;string&amp;nbsp;{unique}&lt;br&gt;+&amp;nbsp;Name:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;OriginStationId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;Status:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;SalesBlocked:&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;BlockReason:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;PaperLevelPercent:&amp;nbsp;byte&lt;br&gt;+&amp;nbsp;DefaultLanguage:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;UpdatedAt:&amp;nbsp;DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="520" width="920" x="3300" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="D_PaymentAttempt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#287752;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;PaymentAttempt&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(40, 119, 82);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;AttemptId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;{FK,&amp;nbsp;unique}&lt;br&gt;+&amp;nbsp;Provider:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;GatewayReference:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;QrPayload:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;QrGeneratedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;QrExpiresAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;LastGatewayResult:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;LastInquiryAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;CreatedAt:&amp;nbsp;DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="505" width="850" x="150" y="1235" as="geometry" />
+        </mxCell>
+        <mxCell id="D_PurchaseTransaction" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#287752;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;PurchaseTransaction&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(40, 119, 82);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;SessionId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;AttemptNo:&amp;nbsp;byte&lt;br&gt;+&amp;nbsp;PaymentMethod:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;AmountVnd:&amp;nbsp;decimal&lt;br&gt;+&amp;nbsp;Status:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;/PaymentPhase:&amp;nbsp;string&amp;nbsp;{derived}&lt;br&gt;+&amp;nbsp;CancellationPending:&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;SubmittedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;ConfirmedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;SupportReference:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;CreatedAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;UpdatedAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;SyncedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;RowVer:&amp;nbsp;byte[]&amp;nbsp;{rowversion}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="740" width="960" x="1190" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="D_PurchaseSession" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#287752;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;PurchaseSession&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(40, 119, 82);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;SessionId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;TvmId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;RouteId:&amp;nbsp;Guid&amp;nbsp;[0..1]&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;FareRuleId:&amp;nbsp;Guid&amp;nbsp;[0..1]&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;FareVnd:&amp;nbsp;decimal&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;Language:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;RetryCount:&amp;nbsp;byte&lt;br&gt;+&amp;nbsp;Status:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;IsPassengerPresent:&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;StartedAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;LastActivityAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;EndedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;EndReason:&amp;nbsp;string&amp;nbsp;[0..1]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="605" width="885" x="2350" y="1235" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Ticket" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#287752;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;Ticket&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(40, 119, 82);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;TicketId:&amp;nbsp;Guid&amp;nbsp;{PK}&lt;br&gt;+&amp;nbsp;SessionId:&amp;nbsp;Guid&amp;nbsp;{FK,&amp;nbsp;unique}&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;{FK,&amp;nbsp;unique}&lt;br&gt;+&amp;nbsp;/Barcode:&amp;nbsp;string&amp;nbsp;{derived}&lt;br&gt;+&amp;nbsp;Status:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;ReservedAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;PrintedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;IssuedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="405" width="790" x="3450" y="1235" as="geometry" />
+        </mxCell>
+        <mxCell id="D_TransactionStatusHistory" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#A06B23;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;TransactionStatusHistory&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(160, 107, 35);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;HistoryId:&amp;nbsp;long&amp;nbsp;{PK,&amp;nbsp;identity}&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;FromStatus:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;ToStatus:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;Reason:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;ChangedAt:&amp;nbsp;DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="360" width="920" x="140" y="2375" as="geometry" />
+        </mxCell>
+        <mxCell id="D_GatewayCallbackLog" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#A06B23;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;GatewayCallbackLog&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(160, 107, 35);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;CallbackId:&amp;nbsp;long&amp;nbsp;{PK,&amp;nbsp;identity}&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;[0..1]&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;GatewayEventId:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;Source:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;ResultCode:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;AmountVnd:&amp;nbsp;decimal&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;SignatureValid:&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;Outcome:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;ReceivedAt:&amp;nbsp;DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="470" width="920" x="1205" y="2375" as="geometry" />
+        </mxCell>
+        <mxCell id="D_ReconciliationTask" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#A06B23;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;ReconciliationTask&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(160, 107, 35);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;TaskId:&amp;nbsp;long&amp;nbsp;{PK,&amp;nbsp;identity}&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;Reason:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;Status:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;InquiryCount:&amp;nbsp;int&lt;br&gt;+&amp;nbsp;NextInquiryAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;LastInquiryAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;Note:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;CreatedAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;ResolvedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="510" width="885" x="2335" y="2375" as="geometry" />
+        </mxCell>
+        <mxCell id="D_MaintenanceAlert" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#A06B23;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;MaintenanceAlert&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(160, 107, 35);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;AlertId:&amp;nbsp;long&amp;nbsp;{PK,&amp;nbsp;identity}&lt;br&gt;+&amp;nbsp;TvmId:&amp;nbsp;Guid&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;AlertType:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;Detail:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;[0..1]&amp;nbsp;{FK}&lt;br&gt;+&amp;nbsp;CreatedAt:&amp;nbsp;DateTime&lt;br&gt;+&amp;nbsp;SentAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;ResolvedAt:&amp;nbsp;DateTime&amp;nbsp;[0..1]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="455" width="865" x="3400" y="2375" as="geometry" />
+        </mxCell>
+        <mxCell id="D_SecurityEvent" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#A06B23;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;SecurityEvent&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(160, 107, 35);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;EventId:&amp;nbsp;long&amp;nbsp;{PK,&amp;nbsp;identity}&lt;br&gt;+&amp;nbsp;TransactionId:&amp;nbsp;Guid&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;EventType:&amp;nbsp;string&lt;br&gt;+&amp;nbsp;Detail:&amp;nbsp;string&amp;nbsp;[0..1]&lt;br&gt;+&amp;nbsp;CreatedAt:&amp;nbsp;DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="355" width="985" x="620" y="3295" as="geometry" />
+        </mxCell>
+        <mxCell id="D_TransactionStatusTransition" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#A06B23;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;TransactionStatusTransition&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(160, 107, 35);&quot;&gt;«entity»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;FromStatus:&amp;nbsp;string&amp;nbsp;{PK&amp;nbsp;part}&lt;br&gt;+&amp;nbsp;ToStatus:&amp;nbsp;string&amp;nbsp;{PK&amp;nbsp;part}&lt;br&gt;+&amp;nbsp;Description:&amp;nbsp;string&amp;nbsp;[0..1]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="1065" x="2360" y="3295" as="geometry" />
+        </mxCell>
+        <mxCell id="A_TicketingRepository" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;TicketingRepository&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«repository»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;getAvailableRoutes(originId:&amp;nbsp;Guid):&amp;nbsp;Route[]&lt;br&gt;+&amp;nbsp;getActiveFare(routeId:&amp;nbsp;Guid):&amp;nbsp;FareRule&lt;br&gt;+&amp;nbsp;createSession(tvmId:&amp;nbsp;Guid):&amp;nbsp;PurchaseSession&lt;br&gt;+&amp;nbsp;saveSessionSelection(sessionId:&amp;nbsp;Guid,&amp;nbsp;routeId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;createTransaction(sessionId:&amp;nbsp;Guid,&amp;nbsp;attemptNo:&amp;nbsp;byte,&amp;nbsp;method:&amp;nbsp;string,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;PurchaseTransaction&lt;br&gt;+&amp;nbsp;savePaymentAttempt(txId:&amp;nbsp;Guid):&amp;nbsp;PaymentAttempt&lt;br&gt;+&amp;nbsp;updateTransactionStatus(txId:&amp;nbsp;Guid,&amp;nbsp;status:&amp;nbsp;string):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;createTicketOnce(txId:&amp;nbsp;Guid,&amp;nbsp;sessionId:&amp;nbsp;Guid):&amp;nbsp;Ticket&lt;br&gt;+&amp;nbsp;logCallback(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;enqueueReconciliation(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;enqueueMaintenanceAlert(tvmId:&amp;nbsp;Guid,&amp;nbsp;txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="760" width="1090" x="4640" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="A_PurchaseController" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=16;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 22px; line-height: 1.4;&quot;&gt;&lt;b&gt;PurchaseController&lt;/b&gt;&lt;div style=&quot;font-size: 14px; color: rgb(109, 86, 172);&quot;&gt;«control»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 16px; line-height: 1.45;&quot;&gt;-&amp;nbsp;sessionId:&amp;nbsp;Guid&amp;nbsp;[0..1]&lt;br&gt;-&amp;nbsp;transactionId:&amp;nbsp;Guid&amp;nbsp;[0..1]&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 16px; line-height: 1.45;&quot;&gt;+&amp;nbsp;startPurchase(tvmId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;selectRoute(routeId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;selectPaymentMethod(method:&amp;nbsp;string):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;cancelPurchase():&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;handlePaymentResult(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;issueTicket(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;disableNewPurchases():&amp;nbsp;void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="600" width="1130" x="5975" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="A_TVMScreen" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;TVMScreen&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«boundary»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;showWelcome():&amp;nbsp;void&lt;br&gt;+&amp;nbsp;showTransportModes():&amp;nbsp;void&lt;br&gt;+&amp;nbsp;showRoutes(routes:&amp;nbsp;Route[]):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;showFare(fareVnd:&amp;nbsp;decimal):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;showQR(qrPayload:&amp;nbsp;string,&amp;nbsp;expiresAt:&amp;nbsp;DateTime):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;showPaymentStatus(status:&amp;nbsp;string):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;showSupportReference(reference:&amp;nbsp;string):&amp;nbsp;void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="485" width="970" x="7450" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="A_PricingEngine" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;PricingEngine&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«service»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;getFare(routeId:&amp;nbsp;Guid):&amp;nbsp;decimal&lt;/div&gt;" vertex="1">
+          <mxGeometry height="205" width="810" x="4680" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="A_PaymentProcessor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;PaymentProcessor&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«service»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;authorizeCard(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;createQRPayment(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;verifySignedResult(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;handleGatewayCallback(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;reconcilePending(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;br&gt;+&amp;nbsp;requestCancellation(txId:&amp;nbsp;Guid):&amp;nbsp;bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="420" width="1050" x="5750" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="A_PrinterService" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;PrinterService&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«service»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;isReady():&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;printTicket(ticket:&amp;nbsp;Ticket):&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;handlePrintFailure(txId:&amp;nbsp;Guid):&amp;nbsp;void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="820" x="7070" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="A_BarcodeGenerator" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;BarcodeGenerator&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«service»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;encodeTicketId(ticketId:&amp;nbsp;Guid):&amp;nbsp;string&lt;/div&gt;" vertex="1">
+          <mxGeometry height="195" width="1000" x="8170" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="A_GatewayAdapter" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;GatewayAdapter&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«adapter»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;healthCheck():&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;authorizeCard(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;createQR(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;queryStatus(txId:&amp;nbsp;Guid):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;verifyCallback(txId:&amp;nbsp;Guid):&amp;nbsp;bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="315" width="950" x="4680" y="2440" as="geometry" />
+        </mxCell>
+        <mxCell id="A_IPaymentGateway" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#375A81;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;IPaymentGateway&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(55, 90, 129);&quot;&gt;«interface»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;authorize(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;createQR(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;getStatus(txId:&amp;nbsp;Guid):&amp;nbsp;string&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="920" x="5900" y="2440" as="geometry" />
+        </mxCell>
+        <mxCell id="A_SimulatedPaymentGateway" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;SimulatedPaymentGateway&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«demo»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;authorize(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;createQR(txId:&amp;nbsp;Guid,&amp;nbsp;amountVnd:&amp;nbsp;decimal):&amp;nbsp;string&lt;br&gt;+&amp;nbsp;getStatus(txId:&amp;nbsp;Guid):&amp;nbsp;string&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="1100" x="7060" y="2440" as="geometry" />
+        </mxCell>
+        <mxCell id="A_IPrinterDevice" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#375A81;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;IPrinterDevice&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(55, 90, 129);&quot;&gt;«interface»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;printTicket(content:&amp;nbsp;string):&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;isReady():&amp;nbsp;bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="195" width="900" x="8400" y="2440" as="geometry" />
+        </mxCell>
+        <mxCell id="A_SimulatedPrinter" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#6D56AC;strokeWidth=1.7;fontColor=#1E293B;fontFamily=Arial;fontSize=18;spacing=10;overflow=hidden;shadow=0;" value="&lt;div style=&quot;text-align: center; font-size: 24px; line-height: 1.4;&quot;&gt;&lt;b&gt;SimulatedPrinter&lt;/b&gt;&lt;div style=&quot;font-size: 16px; color: rgb(109, 86, 172);&quot;&gt;«demo»&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #CBD5E1&quot;&gt;&lt;div style=&quot;font-size: 18px; line-height: 1.45;&quot;&gt;+&amp;nbsp;printTicket(content:&amp;nbsp;string):&amp;nbsp;bool&lt;br&gt;+&amp;nbsp;isReady():&amp;nbsp;bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="195" width="900" x="8400" y="2930" as="geometry" />
+        </mxCell>
+        <mxCell id="note_semantics" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFF9E9;strokeColor=#CBB782;strokeWidth=1;fontColor=#53452E;fontFamily=Arial;fontSize=17;spacing=18;" value="&lt;b&gt;UML line meanings&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;color:#536A80&quot;&gt;━━&lt;/span&gt;  Association (solid, no arrow; multiplicities describe object links)&lt;br/&gt;&lt;span style=&quot;color:#7D6899&quot;&gt;┄┄▷&lt;/span&gt;  Dependency (dashed, open arrow to the used class)&lt;br/&gt;&lt;span style=&quot;color:#7D6899&quot;&gt;┄┄▷&lt;/span&gt;  Realization (dashed, hollow triangle points to interface)&lt;br/&gt;&lt;b&gt;Important&lt;/b&gt;: SQL-backed classes do not imply inheritance or composition automatically." vertex="1">
+          <mxGeometry height="270" width="2590" x="4675" y="3500" as="geometry" />
+        </mxCell>
+        <mxCell id="note_design" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFF9E9;strokeColor=#CBB782;strokeWidth=1;fontColor=#53452E;fontFamily=Arial;fontSize=16;spacing=16;" value="&lt;b&gt;Model alignment&lt;/b&gt;&lt;br/&gt;14 persistent SQL entities + 12 application/service/interface classes.&lt;br/&gt;No separate Passenger entity: it is the external actor in Use Cases/Sequence.&lt;br/&gt;SecurityEvent.TransactionId has no declared FK; TransactionStatusTransition is a status-rule lookup.&lt;br/&gt;1 additional fresh payment attempt per purchase is a business constraint." vertex="1">
+          <mxGeometry height="270" width="2020" x="7550" y="3500" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="text;html=1;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontColor=#5A6A7D;fontSize=17;fontFamily=Arial;" value="SOURCE: 01_create_schema.sql + Use Case Descriptions UC01–UC12 + latest team Class Diagram and Sequence Diagram  |  Service signatures are design-level methods, not verified compiled code." vertex="1">
+          <mxGeometry height="50" width="9570" x="140" y="4000" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
