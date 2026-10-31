@@ -1,0 +1,5 @@
+@model PurchaseTransaction
+<section class="hero"><p class="eyebrow">KẾT QUẢ</p><h1>Trạng thái: @Model.Status</h1><p>@TempData["PaymentMessage"]</p></section><div class="panel"><p><strong>Mã phiên:</strong> @Model.SessionId</p><p><strong>Mã thanh toán:</strong> @Model.TransactionId</p><p><strong>Số tiền:</strong> @Model.AmountVnd.ToString("N0") ₫</p>@if(!string.IsNullOrEmpty(Model.SupportReference)){<p><strong>Mã hỗ trợ:</strong> @Model.SupportReference</p>}@if(ViewBag.Ticket is Ticket ticket){<p><strong>Mã vé:</strong> @ticket.TicketId</p><p><strong>Vé:</strong> @ticket.Status</p>}
+@if(Model.Status==PaymentStatus.Failed||Model.Status==PaymentStatus.Expired){<form method="post" asp-action="Retry">@Html.AntiForgeryToken()<button>Thử lại thanh toán (nếu còn lượt)</button></form>}
+@if(Model.Status==PaymentStatus.Pending||Model.Status==PaymentStatus.CancelPending){<p class="alert">Đang chờ đối soát. Không thử lại hoặc hủy khi kết quả chưa xác định.</p>}
+<form method="post" asp-action="NewPurchase">@Html.AntiForgeryToken()<button class="secondary">Về trang chủ / Bắt đầu phiên mới</button></form></div>

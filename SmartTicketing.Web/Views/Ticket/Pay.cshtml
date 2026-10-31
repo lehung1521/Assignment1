@@ -1,0 +1,37 @@
+@model PurchaseTransaction
+<section class="hero"><p class="eyebrow">BƯỚC 3 / 3</p><h1>Thanh toán vé</h1><p>Mã giao dịch: <code>@Model.TransactionId</code></p></section><div class="panel"><div class="split"><span>Hình thức</span><strong>@Model.PaymentMethod</strong></div><div class="split"><span>Số tiền</span><strong class="price">@Model.AmountVnd.ToString("N0") ₫</strong></div><div class="split"><span>Trạng thái</span><strong>@Model.Status</strong></div>@if(Model.PaymentMethod=="QR")
+{
+    <div class="qr-demo">
+      <p class="qr-heading">MÃ QR DEMO — KHÔNG CHUYỂN TIỀN THẬT</p>
+      @if(ViewBag.QrExpiresAtUtc != null && Model.Status == PaymentStatus.Waiting)
+      {
+        <img class="qr-image" src="@Url.Action("DemoQr", "Ticket", new { id = Model.TransactionId })" alt="Mã QR vé demo để quét bằng camera điện thoại" width="256" height="256" />
+        <p>Quét bằng camera điện thoại để xem thông tin vé mô phỏng.</p>
+        <p>Không phải VietQR, không thể dùng để chuyển khoản.</p>
+        <p class="qr-timer">Thời gian còn lại: <strong id="qr-countdown" data-expiry="@(((DateTime)ViewBag.QrExpiresAtUtc).ToString("yyyy-MM-ddTHH:mm:ss.fffZ"))">--:--</strong></p>
+        <p id="qr-expiry-hint" class="qr-expiry-hint" hidden>QR đã hết hạn. Bạn có thể chọn “Mô phỏng QR hết hạn” để kết thúc giao dịch này.</p>
+      }
+      else { <p>Không có mã QR đang chờ thanh toán.</p> }
+    </div>
+}
+<form method="post" asp-action="Submit">@Html.AntiForgeryToken()<label>Kịch bản thanh toán (chỉ để kiểm thử)</label><select name="scenario"><option value="APPROVED">APPROVED — thành công</option><option value="DECLINED">DECLINED — thất bại</option><option value="NO_RESPONSE">NO_RESPONSE — chưa xác định / PENDING</option></select><label class="check"><input type="checkbox" name="printFailure" value="true"/> Mô phỏng lỗi máy in</label><button>Chạy thanh toán mô phỏng</button></form>
+@if(Model.Status==PaymentStatus.Waiting && !Model.SubmittedAt.HasValue){<form asp-action="BackToPaymentMethod" method="post" style="margin-top:14px">@Html.AntiForgeryToken()<button type="submit" class="secondary">← Quay lại chọn phương thức</button></form>}
+@if(Model.PaymentMethod=="QR" && Model.Status==PaymentStatus.Waiting){<form method="post" asp-action="Expire">@Html.AntiForgeryToken()<button class="secondary">Mô phỏng QR hết hạn</button></form>}</div>
+@if(Model.PaymentMethod=="QR" && Model.Status==PaymentStatus.Waiting && ViewBag.QrExpiresAtUtc != null)
+{
+<script>
+(function(){
+  const el=document.getElementById('qr-countdown');
+  if(!el)return;
+  const expiry=Date.parse(el.dataset.expiry);
+  const update=()=>{
+    const remaining=Math.max(0,Math.ceil((expiry-Date.now())/1000));
+    el.textContent=String(Math.floor(remaining/60)).padStart(2,'0')+':'+String(remaining%60).padStart(2,'0');
+    if(remaining===0){
+      document.getElementById('qr-expiry-hint').hidden=false;
+      const qr=document.querySelector('.qr-image');if(qr)qr.style.opacity='0.3';
+    }
+  };update();setInterval(update,1000);
+})();
+</script>
+}

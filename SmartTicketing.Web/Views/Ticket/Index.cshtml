@@ -1,0 +1,5 @@
+@model List<Route>
+<section class="hero"><p class="eyebrow">BƯỚC 1 / 3</p><h1>Chọn tuyến và điểm đến</h1><p>Một vé một chiều • Giá niêm yết bằng VND</p></section>
+@if(ViewBag.DatabaseError!=null){<div class="alert"><strong>Chưa kết nối SQL Server:</strong> @ViewBag.DatabaseError</div>}
+<div class="routes">@foreach(var route in Model){<form method="post" asp-action="Start" class="route">@Html.AntiForgeryToken()<input type="hidden" name="routeId" value="@route.RouteId"/><div class="pill">@route.Mode</div><h2>@route.NameVi</h2><p>@route.OriginVi → @route.DestinationVi</p><div class="split"><strong>@route.FareVnd.ToString("N0") ₫</strong><button>Chọn tuyến →</button></div></form>}</div>
+@if(!Model.Any()){<p>Chưa có tuyến khả dụng. Hãy chạy SQL schema và dữ liệu mẫu trước.</p>}

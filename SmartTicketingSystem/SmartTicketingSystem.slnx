@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../SmartTicketing.Data/SmartTicketing.Data.csproj" />
+  <Project Path="../SmartTicketing.Models/SmartTicketing.Models.csproj" />
+  <Project Path="../SmartTicketing.Services/SmartTicketing.Services.csproj" />
+  <Project Path="SmartTicketingSystem.csproj" />
+</Solution>

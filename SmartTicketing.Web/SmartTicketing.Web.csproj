@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework><Nullable>disable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <Compile Include="../SmartTicketing.Models/DomainModels.cs" Link="Existing/DomainModels.cs" />
+    <Compile Include="../SmartTicketing.Data/TicketingRepository.cs" Link="Existing/TicketingRepository.cs" />
+    <Compile Include="../SmartTicketing.Services/TicketingServices.cs" Link="Existing/TicketingServices.cs" />
+  </ItemGroup>
+</Project>
